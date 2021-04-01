@@ -132,7 +132,6 @@ li:last-child
 	position: relative;
 	justify-content: space-between;
 }
-
 .arrondiOuvre
 {
 	width: 2em;
@@ -169,6 +168,12 @@ li:last-child
 {
 	text-transform: none;
 }
+.titreIcone:hover
+{
+	text-decoration: underline;
+	color:#0065FC;
+	font-size: 1.3em;
+}
 .icone
 {
 	display: flex;
@@ -180,7 +185,6 @@ li:last-child
     align-items: center;
     justify-content: center;
 }
-
 #eco
 {
 	width: 140px;
@@ -234,6 +238,9 @@ li:last-child
 
 
 
+
+
+
 #global_footer
 {
 	border:1px red solid;
@@ -247,4 +254,11 @@ li:last-child
 p a
 {	color: black;
 	font-size: 0.8em;
+}
+
+
+
+@media all and (max-width:1024px)
+{
+
 }
