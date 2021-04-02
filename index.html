@@ -3,91 +3,109 @@
 
 <head>
   <meta charset="utf-8">
-  <title>OlivierVermesse_2_26022021</title>
+  <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="style_p2.css">
+  <title>OlivierVermesse_2_26022021</title>
 </head>
 
 <body>
-	<div>
-		<header id="bloc_header">
-			<img src="images/logo/reservia.svg" alt="logo reservia" class="logo" />
-			<nav>
-				<ul>
-					<li><a href="#hebergements">Hébergements</a></li>
-					<li><a href="#Activites">Activités</a></li>
-					<li><a href="x.html" target="_blank">S'inscrire</a></li>
-			</nav>
-		</header>
-	</div>
-
-	<section>
-		<!--partie Trouvez votre hébergement-->
-		<H1>Trouvez votre hébergement pour des vacances de rêve</H1>
-		<p>En plein centre ville ou en pleine nature</p>
+	<div id="bloc_page">
 		
-		<div id="rechercher">
-			<div id="iconelocalisation">
-				<i class="fa fa-map-marker fa" aria-hidden="true"></i>
+		<header id="bloc_header">
+			<div>
+				<img src="images/logo/reservia.svg" alt="logo reservia" class="logo" />
 			</div>
-			<form method="post" action="adresse.php">
-				<input type="search" name="search" id="search" size="25" placeholder="Marseille, France" class="saisirecherche" />
-        		<input type="submit" name="submit" id="submit" value="Rechercher" class="boutonrechercher"/>
-        	</form>
-		</div>
+			<div id="bloc_btn">
+				<div id="btn">
+					<nav>
+						<ul>
+							<li><a href="#hebergements">Hébergements</a></li>
+							<li><a href="#Activites">Activités</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div>
+				<a href="x.html" target="_blank" id="btnInscrire">S'inscrire</a>
+			</div>
+		</header>
+	
+		<section><!--partie Trouvez votre hébergement-->
+			<H1>Trouvez votre hébergement pour des vacances de rêve</H1>
+			<p>En plein centre ville ou en pleine nature</p>
+			
+			<div id="rechercher">
+				<div id="iconelocalisation">
+					<i class="fa fa-map-marker fa" aria-hidden="true"></i>
+				</div>
+				<div>
+					<form method="post" action="adresse.php">
+						<input type="search" name="search" id="search" size="25" placeholder="Marseille, France" class="saisirecherche" />
+				</div>
+		        <div>
+	        			<input type="submit" name="submit" id="submit" value="Rechercher" class="boutonrechercher_web"/>
+	        	</div>
+	        	<div>
+	        			<button type="submit" name="submit" id="submit" value="Rechercher" class="boutonrechercher_mobile"><i class="fas fa-search" aria-hidden="true"></i></button>
+	        	</div>
+	        		</form>
+        	</div>   
+			
+
 </br><!--partie Trouvez votre hébergement-->
-		<div id="bloc_filtre">	
-			<p> Filtres
-				<div id="eco">
-					<div class="arrondiOuvre"></div>
-					<div class="icone">
-						<i class="fa fa-money" aria-hidden="true"></i>
-					</div>
-					<div class="titreIcone">économie</div>
-					<div class="arrondiferme"></div>
+			<div id="bloc_filtre">	
+				<div id="titre">Filtres </div>
+				<div id="filtres">
+					<div id="eco">
+						<div class="arrondiOuvre"></div>
+						<div class="icone">
+							<i class="fa fa-money" aria-hidden="true"></i>
+						</div>
+						<div class="titreIcone">économie</div>
+						<div class="arrondiferme"></div>
 
-				</div>
-				<div id="famille">
-					<div class="icone">
-					<div class="arrondiOuvre"></div>
-						<i class="fa fa-child" aria-hidden="true"></i>
 					</div>
-					<div class="titreIcone">familial</div>
-					<div class="arrondiferme"></div>
-				</div>
-				<div id="romantique">
-					<div class="arrondiOuvre"></div>
-					<div class="icone">
-						<i class="fa fa-heart" aria-hidden="true"></i>
+					<div id="famille">
+						<div class="icone">
+						<div class="arrondiOuvre"></div>
+							<i class="fa fa-child" aria-hidden="true"></i>
+						</div>
+						<div class="titreIcone">familial</div>
+						<div class="arrondiferme"></div>
 					</div>
-					<div class="titreIcone">romantique</div>
-					<div class="arrondiferme"></div>
-				</div>
+					<div id="romantique">
+						<div class="arrondiOuvre"></div>
+						<div class="icone">
+							<i class="fa fa-heart" aria-hidden="true"></i>
+						</div>
+						<div class="titreIcone">romantique</div>
+						<div class="arrondiferme"></div>
+					</div>
 
-				<div id="animaux">
-					<div class="arrondiOuvre"></div>
-					<div class="icone">
-						<i class="fas fa-dog"></i>
+					<div id="animaux">
+						<div class="arrondiOuvre"></div>
+						<div class="icone">
+							<i class="fas fa-dog"></i>
+						</div>
+						<div class="titreIcone"><span>Animaux&nbsp;autorisés</span></div>
+						<div class="arrondiferme"></div>
 					</div>
-					<div class="titreIcone"><span>Animaux&nbsp;autorisés</span></div>
-					<div class="arrondiferme"></div>
+				</div>
+			</div>
+			
+			<p>
+				<div id="nbdispo">
+					<div id="iconeInfo">
+						<i class="fa fa-info fa-xs" aria-hidden="true"></i>
+					</div>
+				<span>Plus de 500 logements sont disponibles dans cette ville</span>
 				</div>
 			</p>
-		</div>
-		<p>
-			<div id="nbdispo">
-				<div id="iconeInfo">
-					<i class="fa fa-info fa-xs" aria-hidden="true"></i>
-				</div>
-			<span>Plus de 500 logements sont disponibles dans cette ville</span>
-			</div>
-		</p>
-	
-	</section>
+		</section>
 
 	<section>
 		<!--partie avec photos hébergements-->
 		<h2 id="Hebergement">Hébergement à Marseille </h2>
-
 		<aside>
 			<!--partie les plus populaires-->
 		</aside>
@@ -125,6 +143,7 @@
 
 	<script src="https://use.fontawesome.com/17f21b793c.js"></script>
 	<script src="https://kit.fontawesome.com/717dc6ad61.js" crossorigin="anonymous"></script>
+</div>
 </body>
 
 </html>
