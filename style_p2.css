@@ -312,3 +312,75 @@ nav li:hover
 
 
 }
+
+
+
+
+@media all and (min-width:481px) and (max-width:1000px) /*tablette*/
+{
+#bloc_page
+{
+	width: auto;
+	border:1px black solid;
+}
+#bloc_header
+{
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+#btn
+{
+	width: 100%;
+	order: 1;
+}
+nav li
+{
+	border-bottom: 2px solid #F2F2F2;
+	flex-basis: 50%;
+}
+nav li:hover
+{
+	border-bottom: 2px solid #0065FC;
+}
+
+/*section RECHERCHE*/
+
+.boutonrechercher_mobile
+{
+	display: none;
+}
+#filtres
+{
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: space-between;	
+}
+
+#eco, #famille, #romantique, #animaux
+{
+	margin-right: 30px;
+	margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#global_footer
+{
+	flex-direction: column;
+	display: inline;
+}
+
+}
