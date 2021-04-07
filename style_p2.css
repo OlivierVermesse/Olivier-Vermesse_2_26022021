@@ -482,6 +482,21 @@ nav li:hover
 	margin-top: 15px;
 }
 
+/*section HEBERGEMENTS POPULAIRES*/
+#section1
+{
+	flex-direction: column;
+}
+#bloc_hebergements
+{
+	flex:none;
+	order:1;
+}
+#bloc_populaires
+{
+	flex:none;
+}
+
 /*section ACTIVITES*/
 
 #activity
