@@ -94,7 +94,6 @@ li:nth-child(2) a
 	display: flex;
 	height: 40px;
 	justify-content: flex-start;
-	border: 1px green solid;
 	flex-wrap: nowrap;
 }
 #iconelocalisation
@@ -115,7 +114,6 @@ li:nth-child(2) a
 	font-size: 1.2em;
 	font-family: ralewayblack;
 	border:none;
-	border:1px red solid;
 }
 .boutonrechercher_web
 {
@@ -126,18 +124,11 @@ li:nth-child(2) a
 	border-radius: 0px 15px 15px 0px;
 	border:none;
 	font-size: 1.2em;
-	border:1px black solid;
 }
-
-/*.boutonrechercher_mobile
+.boutonrechercher_mobile
 {
-	visibility: hidden;
 	display: none;
-	opacity: 0;
-}*/
-
-
-
+}
 
 /*partie filtre dans section RECHERCHE*/
 #bloc_filtre
@@ -221,13 +212,13 @@ li:nth-child(2) a
 {
 	display: flex;
 	justify-content: space-between;
-	border: 1px red solid;
 }
 
 #bloc_hebergements
 {
 	flex:3.5;
 	margin-right: 30px;
+	border-radius: 15px 15px 15px 15px;
 	border:1px black solid;
 }
 #bloc_populaires
@@ -302,17 +293,12 @@ li:nth-child(2) a
 {
 	font-family: ralewaybold;
 }
-.stars5
+.stars
 {
 	color: #0065FC;
 	font-size: 0.8em;
 }
-.stars4
-{
-	color: #0065FC;
-	font-size: 0.8em;
-}
-.stars4 span
+.stars span
 {
 	color: red;
 }
@@ -461,6 +447,7 @@ nav li:hover
 
 .boutonrechercher_mobile
 {
+	display: block;
 	width: 40px;
 	height: 40px;
 	background-color: #0065FC;
