@@ -42,8 +42,8 @@
 body
 {
 	font-family: ralewayregular, Arial, sans-serif;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 a
 {
@@ -94,6 +94,8 @@ li:nth-child(2) a
 	display: flex;
 	height: 40px;
 	justify-content: flex-start;
+	border: 1px green solid;
+	flex-wrap: nowrap;
 }
 #iconelocalisation
 {
@@ -102,7 +104,7 @@ li:nth-child(2) a
 	height: auto;
 	text-align: center;
 	padding-top: 10px;
-	border-radius: 10px 0px 0px 10px;
+	border-radius: 15px 0px 0px 15px;
 }
 .saisirecherche
 {
@@ -113,26 +115,29 @@ li:nth-child(2) a
 	font-size: 1.2em;
 	font-family: ralewayblack;
 	border:none;
+	border:1px red solid;
 }
 .boutonrechercher_web
 {
 	height: 100%;
 	width: 150px;
-	display: flex;
 	background-color: #0065FC;
 	color: white;
-	border-radius: 0px 10px 10px 0px;
+	border-radius: 0px 15px 15px 0px;
 	border:none;
 	font-size: 1.2em;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
+	border:1px black solid;
 }
 
-.boutonrechercher_mobile
+/*.boutonrechercher_mobile
 {
+	visibility: hidden;
 	display: none;
-}
+	opacity: 0;
+}*/
+
+
+
 
 /*partie filtre dans section RECHERCHE*/
 #bloc_filtre
@@ -211,6 +216,133 @@ li:nth-child(2) a
     justify-content: center;
 }
 
+/*partie HERBERGEMENT A MARSEILLE*/
+#section1
+{
+	display: flex;
+	justify-content: space-between;
+	border: 1px red solid;
+}
+
+#bloc_hebergements
+{
+	flex:3.5;
+	margin-right: 30px;
+	border:1px black solid;
+}
+#bloc_populaires
+{
+	flex:1.5;
+	height: 550px;
+	display: flex;
+	flex-direction: column;
+	background-color: yellow;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 15px 15px 15px 15px;
+}
+#bloc_titre_populaires
+{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+}
+#htlm_matin, #htlm_eau, #htlm_bleublanc
+{
+	display: flex;
+	width: 80%;
+	height: 120px;
+	border-radius: 15px 15px 15px 15px;
+	background-color: white;
+	padding: 5px 5px 5px 5px;
+}
+.bloc_htl_info
+{
+	display: flex;
+	flex:2;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 10px 10px 10px 30px;
+}
+.htl_photo
+{
+	display: flex;
+	width: 100px;
+	height: auto;
+	flex:1;
+	border-radius: 15px 15px 15px 15px;
+}
+.htl_photo img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+	border-radius: 15px 0px 0px 15px;
+}
+.htl_desc
+{
+	display: flex;
+	flex-direction: column;
+}
+.htl_name
+{
+	font-family: ralewaybold;
+}
+.htl_name a
+{
+	color: black;
+}
+.fromprice
+{
+	font-size: 0.8em;
+}
+.fromprice span
+{
+	font-family: ralewaybold;
+}
+.stars5
+{
+	color: #0065FC;
+	font-size: 0.8em;
+}
+.stars4
+{
+	color: #0065FC;
+	font-size: 0.8em;
+}
+.stars4 span
+{
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*partie ACTIVITES A MARSEILLE*/
@@ -228,7 +360,7 @@ li:nth-child(2) a
 	position: relative;
 	width: 23%;
 	height: 500px;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 15px 15px 15px 15px;
 	box-shadow: 0 0 15px red;
 }
 #fort, #iles, #garde, #longchamp
@@ -236,7 +368,7 @@ li:nth-child(2) a
 	position: relative;
 	width: 23%;
 	height: 230px;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 15px 15px 15px 15px;
 	box-shadow: 0 0 15px red;
 }
 #port img, #fort img, #iles img, #calanques img, #garde img, #longchamp img
@@ -245,19 +377,23 @@ li:nth-child(2) a
 	height: 100%;
 	object-fit: cover;
 	object-position: center center;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 15px 15px 15px 15px;
 }
 #port_desc, #fort_desc, #iles_desc, #calanques_desc, #garde_desc, #longchamp_desc
 {
 	position: absolute;
 	bottom: 0;
 	background-color: yellow;
-	width: 94.5%;
+	width: 100%;
 	line-height: 40px;
-	padding-left: 20px;
 	font-family: ralewaybold;
-	border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 15px 15px;
 	font-size: 0.9em;
+}
+
+#port_desc span, #fort_desc span, #iles_desc span, #calanques_desc span, #garde_desc span, #longchamp_desc span
+{
+	padding-left: 20px;
 }
 
 #global_footer
@@ -276,7 +412,7 @@ p a
 
 /*----------------------------MEDIA QUERIES--------------------------------*/
 
-@media all and (max-width:480px) /*Mobile*/
+@media all and (max-width:1024px) /*Mobile*/
 {
 #bloc_page
 {
@@ -292,6 +428,19 @@ p a
 {
 	width: 100%;
 	order: 1;
+}
+nav
+{
+	width: 100%;
+}
+nav ul
+{
+	display: flex;
+	list-style-type: none;
+	margin-top: 0;
+	justify-content: flex-start;
+	padding-left: 0;
+	text-align: center;
 }
 nav li
 {
@@ -309,17 +458,16 @@ nav li:hover
 {
 	display: none;
 }
+
 .boutonrechercher_mobile
 {
 	width: 40px;
 	height: 40px;
-	border-radius: 10px 10px 10px 10px;
 	background-color: #0065FC;
 	color: white;
-	border:none;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+	border: none;
+	border-radius: 15px 15px 15px 15px;
+	border:1px black solid;
 }
 #filtres
 {
@@ -363,74 +511,3 @@ nav li:hover
 
 
 
-/*@media all and (min-width:481px) and (max-width:1000px) /*tablette*/
-/*{
-#bloc_page
-{
-	width: auto;
-	border:1px black solid;
-}
-#bloc_header
-{
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-}
-#btn
-{
-	width: 100%;
-	order: 1;
-}
-nav li
-{
-	border-bottom: 2px solid #F2F2F2;
-	flex-basis: 50%;
-}
-nav li:hover
-{
-	border-bottom: 2px solid #0065FC;
-}*/
-
-/*section RECHERCHE*/
-
-/*.boutonrechercher_mobile
-{
-	display: none;
-}
-#filtres
-{
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-content: space-between;	
-}
-
-#eco, #famille, #romantique, #animaux
-{
-	margin-right: 30px;
-	margin-top: 15px;
-}*/
-
-/*section ACTIVITES*/
-
-/*#activites
-{
-	width: auto;
-}
-{
-	flex-wrap: nowrap;
-	height: 1600px;
-	border:1px yellow solid;
-}
-#port, #fort, #iles, #calanques, #garde, #longchamp
-{
-	width: auto;
-	height: 240px;
-}
-
-#global_footer
-{
-	flex-direction: column;
-	display: inline;
-}*/
-
-}

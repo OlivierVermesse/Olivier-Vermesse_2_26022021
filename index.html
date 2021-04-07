@@ -36,16 +36,12 @@
 				<div id="iconelocalisation">
 					<i class="fa fa-map-marker fa" aria-hidden="true"></i>
 				</div>
-					<div>
-						<form method="post" action="adresse.php">
-							<input type="search" name="search" id="search" size="25" placeholder="Marseille, France" class="saisirecherche"/>
-					</div>
-			        <div>
-		        			<input type="submit" name="submit" id="submit" value="Rechercher" class="boutonrechercher_web"/>
-		        	</div>
-		        	<div>
-		        			<button type="submit" name="submit_mobile" id="submit_mobile" value="Rechercher" class="boutonrechercher_mobile"><i class="fas fa-search" aria-hidden="true"></i></button>
-		        	</div>
+				<form method="post" action="adresse.php">
+					<input type="search" name="search" id="search" size="25" placeholder="Marseille, France" class="saisirecherche"/>
+				</form>
+			    <form method="post" action="adresse.php">
+		        	<input type="submit" name="submit" id="submit" value="Rechercher" class="boutonrechercher_web"/>
+		        	<button type="submit" name="submit_mobile" id="submit_mobile" value="Rechercher" class="boutonrechercher_mobile"><i class="fas fa-search" aria-hidden="true"></i></button>
 	        	</form>
         	</div>   
 <br>
@@ -89,53 +85,113 @@
 				</div>
 		</section>
 
-		<section>
+		<section id="section1">
 					<!--partie avec photos hébergements-->
-			<h2 id="Hebergement">Hébergement à Marseille </h2>
-			<aside>
-					<!--partie les plus populaires-->
+			<div id="bloc_hebergements">
+				<h2>Hébergement à Marseille </h2>
+				<p>il faudra ajouter les photos</p>
+
+			</div>
+
+			<aside id="bloc_populaires">
+				<div id="bloc_titre_populaires">
+					<h2>Les plus populaires </h2>
+					<i class="fas fa-chart-line fa-2x"></i>
+				</div>
+				<div id="htlm_matin">
+					<div class="htl_photo">
+						<img src="images/hebergements/hotel-le-soleil-du-matin.jpg" alt="hotel-le-soleil-du-matin" title="Hotel Le soleil du matin" />
+					</div>
+					<div class="bloc_htl_info">
+						<div class="htl_desc">
+							<div class="htl_name">
+								<a href="https://olivier.fr" title= "Hotel Le soleil du matin" target="_blank" > Hôtel Le soleil du matin</a>
+							</div>
+							<div class="fromprice"> Nuit à partir de 128 <span>€</span>
+							</div>
+						</div>
+						<div class="stars5">
+							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+						</div>
+					</div>
+				</div>
+				<div id="htlm_eau">
+					<div class="htl_photo">
+						<img src="images/hebergements/au-coeur-de-leau.jpg" alt="au-coeur-de-leau" title="Au coeur de l'eau chambres d'hôtes" />
+					</div>
+					<div class="bloc_htl_info">
+						<div class="htl_desc">
+							<div class="htl_name">
+								<a href="https://olivier.fr" title= "Au coeur de l'eau chambres d'hôtes" target="_blank" > Au coeur de l'eau chambres d'hôtes</a>
+							</div>
+							<div class="fromprice"> Nuit à partir de 71 <span>€</span>
+							</div>
+						</div>
+						<div class="stars4">
+							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span>
+						</div>
+					</div>
+				</div>
+				<div id="htlm_bleublanc">
+					<div class="htl_photo">
+						<img src="images/hebergements/hotel-tout-bleu-et-blanc.jpg" alt="hotel-tout-bleu-et-blanc" title="Hôtel Tout bleu et Blanc" />
+					</div>
+					<div class="bloc_htl_info">
+						<div class="htl_desc">
+							<div class="htl_name">
+								<a href="https://olivier.fr" title= "Hôtel Tout bleu et Blanc" target="_blank" > Hôtel Tout bleu et Blanc</a>
+							</div>
+							<div class="fromprice"> Nuit à partir de 68 <span>€</span>
+							</div>
+						</div>
+						<div class="stars4">
+							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
 			</aside>
 		</section>
 
 
-		<section>
-					<!--partie activités à Marseille-->
-
-
-				
-
-
+		<section id="section2">
 			<div id="bloc_activity">
 				<h2>Activités à Marseille </h2>
 				<div id="activity">
 					<div id="port">
 						<img src="images/activites/vieux_port.jpg" alt="vieux_port" title="Vieux port" />
-						<div id="port_desc"> Vieux Port
+						<div id="port_desc"> <span>Vieux Port</span>
 						</div>
 					</div>
 					<div id="fort">
 						<img src="images/activites/fort_pomegues.jpg" alt="fort_pomegues" title="fort de Pomegues" 	/>
-						<div id="fort_desc"> Fort de Pomègues
+						<div id="fort_desc"> <span>Fort de Pomègues</span>
 						</div>
 					</div>
 					 <div id="iles">
 						<img src="images/activites/ile_frioul.jpg" alt="ile_frioul" title="Iles du Frioul" />
-						<div id="iles_desc"> Îles du Frioul
+						<div id="iles_desc"> <span>Îles du Frioul</span>
 						</div>
 					</div>
 					<div id="calanques">
 						<img src="images/activites/parc_calanques.jpg" alt="parc_calanques" title="Parc des Calanques" />
-						<div id="calanques_desc"> Parc National des Calanques
+						<div id="calanques_desc"> <span>Parc National des Calanques</span>
 						</div>
 					</div>
 					<div id="garde">
 						<img src="images/activites/notre_dame_garde.jpg" alt="notre_dame_garde" title="Notre dame de la Garde" />
-						<div id="calanques_desc"> Notre-Dame-de-la-Garde
+						<div id="garde_desc"> <span>Notre-Dame-de-la-Garde</span>
 						</div>
 					</div>
 					<div id="longchamp">
 						<img src="images/activites/longchamp.jpg" alt="parc_longchamp" title="Parc Longchamp" />
-						<div id="calanques_desc"> Parc Longchamp
+						<div id="longchamp_desc"> <span>Parc Longchamp</span>
 						</div>
 					</div>
 				</div>
