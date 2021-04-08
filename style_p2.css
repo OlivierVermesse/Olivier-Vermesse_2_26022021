@@ -212,6 +212,7 @@ li:nth-child(2) a
 {
 	display: flex;
 	justify-content: space-between;
+	/*height: 550px;*/
 }
 
 #bloc_hebergements
@@ -222,6 +223,7 @@ li:nth-child(2) a
 	height: 550px;
 	flex-direction: column;
 	justify-content: space-around;
+<<<<<<< HEAD
 	border-radius: 15px 15px 15px 15px;
 	background-color: #F2F2F2;
 }
@@ -288,6 +290,76 @@ li:nth-child(2) a
 	size: 0.9em;
 	margin-left: 30px;
 }
+=======
+	border-radius: 15px 15px 15px 15px;
+
+	background-color: green;
+}
+#bloc_titre_hebergements
+{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+#bloc_titre_hebergements h2
+{
+	margin-left: 30px;
+}
+#hotels_hebergements
+{
+	display: flex;
+	flex-wrap: wrap;
+	height: 400px;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: space-between;
+}
+#htlm_cannebiere, #htlm_port, #htlm_mouettes, #htlm_mer, #htlm_panier,#htlm_amina
+{
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	height: 180px;
+	border-radius: 15px 15px 15px 15px;
+	background-color: white;
+	padding: 5px 5px 5px 5px;
+}
+
+.bloc_htl_info
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 40%;
+	margin: 10px 10px 10px 10px;
+}
+.htl_photo
+{
+	display: flex;
+	width: 100%;
+	height: 60%;
+	border-radius: 15px 15px 15px 15px;
+}
+.htl_photo img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+	border-radius: 15px 15px 15px 15px;
+}
+#voirplus
+{
+	height: 50px;
+	display: flex;
+	align-items: center;
+	color: black;
+	font-family: ralewaybold;
+	size: 0.9em;
+	margin-left: 30px;
+}
+>>>>>>> 1a681e12ad787eb18b5da12b447136f43a8b429a
 
 #bloc_populaires
 {
@@ -295,6 +367,12 @@ li:nth-child(2) a
 	height: 550px;
 	display: flex;
 	flex-direction: column;
+<<<<<<< HEAD
+=======
+
+	background-color: yellow;
+
+>>>>>>> 1a681e12ad787eb18b5da12b447136f43a8b429a
 	align-items: center;
 	justify-content: space-around;
 	border-radius: 15px 15px 15px 15px;
