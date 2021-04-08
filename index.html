@@ -18,8 +18,8 @@
 			<div id="btn">
 				<nav>
 					<ul>
-						<li><a href="#hebergements">Hébergements</a></li>
-						<li><a href="#Activites">Activités</a></li>
+						<li><a href="#bloc_hebergements">Hébergements</a></li>
+						<li><a href="#bloc_activity">Activités</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -32,7 +32,7 @@
 			<H1>Trouvez votre hébergement pour des vacances de rêve</H1>
 			<p>En plein centre ville ou en pleine nature</p>
 			
-			<div id="rechercher">
+			<div id="rechercher">   <!--partie RECHERCHE de Trouvez votre hébergement-->
 				<div id="iconelocalisation">
 					<i class="fa fa-map-marker fa" aria-hidden="true"></i>
 				</div>
@@ -44,9 +44,8 @@
 		        	<button type="submit" name="submit_mobile" id="submit_mobile" value="Rechercher" class="boutonrechercher_mobile"><i class="fas fa-search" aria-hidden="true"></i></button>
 	        	</form>
         	</div>   
-<br>
-					<!--partie Trouvez votre hébergement-->
-			<div id="bloc_filtre">	
+			<br>
+			<div id="bloc_filtre">	<!--partie FILTRE de Trouvez votre hébergement-->
 				<h3>Filtres</h3>
 				<div id="filtres">
 					<div id="eco">
@@ -83,84 +82,186 @@
 					</div>
 				<span>Plus de 500 logements sont disponibles dans cette ville</span>
 				</div>
+				<br>
 		</section>
 
-		<section id="section1">
-					<!--partie avec photos hébergements-->
+		<section id="section1">		<!--partie hébergements & populaires-->
 			<div id="bloc_hebergements">
-				<h2>Hébergement à Marseille </h2>
-				<p>il faudra ajouter les photos</p>
-
+				<div id="bloc_titre_hebergements">
+					<h2> Hébergement à Marseille </h2>
+				</div>
+				<div id="hotels_hebergements">
+					<div id="htlm_cannebiere">
+						<div class="htl_photo">
+							<img src="images/hebergements/auberge-la-cannebiere.jpg" alt="auberge-la-cannebiere" title="Auberge la Cannebiere" />
+						</div>
+						<div class="bloc_htl_info">
+							<div class="htl_desc">
+								<div class="htl_name">
+									<a href="https://olivier.fr" title= "Auberge la Cannebiere" target="_blank" > Auberge la Cannebière</a>
+								</div>
+								<div class="fromprice"> Nuit à partir de 25<span>€</span>
+								</div>
+							</div>
+							<div class="stars">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span>
+							</div>
+						</div>
+					</div>
+					<div id="htlm_port">
+						<div class="htl_photo">
+							<img src="images/hebergements/hotel-du-port.jpg" alt="hotel-du-port" title="Hotel du port" />
+						</div>
+						<div class="bloc_htl_info">
+							<div class="htl_desc">
+								<div class="htl_name">
+									<a href="https://olivier.fr" title= "Hotel du port" target="_blank" > Hôtel du port</a>
+								</div>
+								<div class="fromprice"> Nuit à partir de 52<span>€</span>
+								</div>
+							</div>
+							<div class="stars">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+							</div>
+						</div>
+					</div>
+					<div id="htlm_mouettes">
+						<div class="htl_photo">
+							<img src="images/hebergements/hotel-les-mouettes.jpg" alt="hotel-les-mouettes" title="Hotel les mouettes" />
+						</div>
+						<div class="bloc_htl_info">
+							<div class="htl_desc">
+								<div class="htl_name">
+									<a href="https://olivier.fr" title= "Hotel les mouettes" target="_blank" > Hôtel les mouettes</a>
+								</div>
+								<div class="fromprice"> Nuit à partir de 76<span>€</span>
+								</div>
+							</div>
+							<div class="stars">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span>
+							</div>
+						</div>
+					</div>
+					<div id="htlm_mer">
+						<div class="htl_photo">
+							<img src="images/hebergements/Hotel-de-la-mer.jpg" alt="Hotel-de-la-mer" title="Hotel de la mer" />
+						</div>
+						<div class="bloc_htl_info">
+							<div class="htl_desc">
+								<div class="htl_name">
+									<a href="https://olivier.fr" title= "Hotel de la mer" target="_blank" > Hôtel de la mer</a>
+								</div>
+								<div class="fromprice"> Nuit à partir de 46<span>€</span>
+								</div>
+							</div>
+							<div class="stars">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+							</div>
+						</div>
+					</div>
+					<div id="htlm_panier">
+						<div class="htl_photo">
+							<img src="images/hebergements/auberge-le-panier.jpg" alt="auberge-le-panier" title="Auberge le panier" />
+						</div>
+						<div class="bloc_htl_info">
+							<div class="htl_desc">
+								<div class="htl_name">
+									<a href="https://olivier.fr" title= "Auberge le panier" target="_blank" > Auberge Le Panier</a>
+								</div>
+								<div class="fromprice"> Nuit à partir de 23<span>€</span>
+								</div>
+							</div>
+							<div class="stars">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span>
+							</div>
+						</div>
+					</div>
+					<div id="htlm_amina">
+						<div class="htl_photo">
+							<img src="images/hebergements/hotel-chez-amina.jpg" alt="hotel-chez-amina" title="Hotel chez Amina" />
+						</div>
+						<div class="bloc_htl_info">
+							<div class="htl_desc">
+								<div class="htl_name">
+									<a href="https://olivier.fr" title= "Hotel chez Amina" target="_blank" > Hôtel chez Amina</a>
+								</div>
+								<div class="fromprice"> Nuit à partir de 96<span>€</span>
+								</div>
+							</div>
+							<div class="stars">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a id="voirplus" tabindex="0" href="#">Afficher plus</a>
 			</div>
+
+
 
 			<aside id="bloc_populaires">
 				<div id="bloc_titre_populaires">
 					<h2>Les plus populaires </h2>
 					<i class="fas fa-chart-line fa-2x"></i>
 				</div>
-				<div id="htlm_matin">
-					<div class="htl_photo">
-						<img src="images/hebergements/hotel-le-soleil-du-matin.jpg" alt="hotel-le-soleil-du-matin" title="Hotel Le soleil du matin" />
-					</div>
-					<div class="bloc_htl_info">
-						<div class="htl_desc">
-							<div class="htl_name">
-								<a href="https://olivier.fr" title= "Hotel Le soleil du matin" target="_blank" > Hôtel Le soleil du matin</a>
+				<div id="hotels_pop">
+					<div id="htlm_matin">
+						<div class="htl_photo_pop">
+							<img src="images/hebergements/hotel-le-soleil-du-matin.jpg" alt="hotel-le-soleil-du-matin" title="Hotel Le soleil du matin" />
+						</div>
+						<div class="bloc_htl_info_pop">
+							<div class="htl_desc">
+								<div class="htl_name">
+									<a href="https://olivier.fr" title= "Hotel Le soleil du matin" target="_blank" > Hôtel Le soleil du matin</a>
+								</div>
+								<div class="fromprice"> Nuit à partir de 128<span>€</span>
+								</div>
 							</div>
-							<div class="fromprice"> Nuit à partir de 128 <span>€</span>
+							<div class="stars">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 							</div>
 						</div>
-						<div class="stars">
-							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+					</div>
+					<div id="htlm_eau">
+						<div class="htl_photo_pop">
+							<img src="images/hebergements/au-coeur-de-leau.jpg" alt="au-coeur-de-leau" title="Au coeur de l'eau chambres d'hôtes" />
+						</div>
+						<div class="bloc_htl_info_pop">
+							<div class="htl_desc">
+								<div class="htl_name">
+									<a href="https://olivier.fr" title= "Au coeur de l'eau chambres d'hôtes" target="_blank" > Au coeur de l'eau chambres d'hôtes</a>
+								</div>
+								<div class="fromprice"> Nuit à partir de 71<span>€</span>
+								</div>
+							</div>
+							<div class="stars">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span>
+							</div>
+						</div>
+					</div>
+					<div id="htlm_bleublanc">
+						<div class="htl_photo_pop">
+							<img src="images/hebergements/hotel-tout-bleu-et-blanc.jpg" alt="hotel-tout-bleu-et-blanc" title="Hôtel Tout bleu et Blanc" />
+						</div>
+						<div class="bloc_htl_info_pop">
+							<div class="htl_desc">
+								<div class="htl_name">
+									<a href="https://olivier.fr" title= "Hôtel Tout bleu et Blanc" target="_blank" > Hôtel Tout bleu et Blanc</a>
+								</div>
+								<div class="fromprice"> Nuit à partir de 68<span>€</span>
+								</div>
+							</div>
+							<div class="stars">
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div id="htlm_eau">
-					<div class="htl_photo">
-						<img src="images/hebergements/au-coeur-de-leau.jpg" alt="au-coeur-de-leau" title="Au coeur de l'eau chambres d'hôtes" />
-					</div>
-					<div class="bloc_htl_info">
-						<div class="htl_desc">
-							<div class="htl_name">
-								<a href="https://olivier.fr" title= "Au coeur de l'eau chambres d'hôtes" target="_blank" > Au coeur de l'eau chambres d'hôtes</a>
-							</div>
-							<div class="fromprice"> Nuit à partir de 71 <span>€</span>
-							</div>
-						</div>
-						<div class="stars">
-							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span>
-						</div>
-					</div>
-				</div>
-				<div id="htlm_bleublanc">
-					<div class="htl_photo">
-						<img src="images/hebergements/hotel-tout-bleu-et-blanc.jpg" alt="hotel-tout-bleu-et-blanc" title="Hôtel Tout bleu et Blanc" />
-					</div>
-					<div class="bloc_htl_info">
-						<div class="htl_desc">
-							<div class="htl_name">
-								<a href="https://olivier.fr" title= "Hôtel Tout bleu et Blanc" target="_blank" > Hôtel Tout bleu et Blanc</a>
-							</div>
-							<div class="fromprice"> Nuit à partir de 68 <span>€</span>
-							</div>
-						</div>
-						<div class="stars">
-							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span>
-						</div>
-					</div>
-				</div>
-
-
-
-
-
-
-
 			</aside>
 		</section>
+		<br>
 
-
-		<section id="section2">
+		<section id="section2">		<!--partie Activités à Marseille-->
 			<div id="bloc_activity">
 				<h2>Activités à Marseille </h2>
 				<div id="activity">
@@ -197,8 +298,7 @@
 				</div>
 			</div>
 		</section>
-<br>
-
+		<br>
 		<footer>
 			<div id="global_footer">
 				<div id="A_propos">
@@ -221,7 +321,6 @@
 		    	</div>
 		    </div>
 		</footer>
-	
 	</div>
 	
 	<script src="https://use.fontawesome.com/17f21b793c.js"></script>
