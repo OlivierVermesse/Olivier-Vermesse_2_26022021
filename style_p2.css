@@ -212,7 +212,6 @@ li:nth-child(2) a
 {
 	display: flex;
 	justify-content: space-between;
-	/*height: 550px;*/
 }
 
 #bloc_hebergements
@@ -224,8 +223,7 @@ li:nth-child(2) a
 	flex-direction: column;
 	justify-content: space-around;
 	border-radius: 15px 15px 15px 15px;
-
-	background-color: green;
+	background-color: #F2F2F2;
 }
 #bloc_titre_hebergements
 {
@@ -257,7 +255,6 @@ li:nth-child(2) a
 	background-color: white;
 	padding: 5px 5px 5px 5px;
 }
-
 .bloc_htl_info
 {
 	display: flex;
@@ -298,12 +295,10 @@ li:nth-child(2) a
 	height: 550px;
 	display: flex;
 	flex-direction: column;
-
-	background-color: yellow;
-
 	align-items: center;
 	justify-content: space-around;
 	border-radius: 15px 15px 15px 15px;
+	background-color: #F2F2F2;
 }
 #bloc_titre_populaires
 {
@@ -383,7 +378,7 @@ li:nth-child(2) a
 }
 .stars span
 {
-	color: red;
+	color: #F2F2F2;
 }
 
 /*partie ACTIVITES A MARSEILLE*/
@@ -402,7 +397,7 @@ li:nth-child(2) a
 	width: 23%;
 	height: 500px;
 	border-radius: 15px 15px 15px 15px;
-	box-shadow: 0 0 15px red;
+	box-shadow: 0 0 15px #F2F2F2;
 }
 #fort, #iles, #garde, #longchamp
 {
@@ -410,7 +405,7 @@ li:nth-child(2) a
 	width: 23%;
 	height: 230px;
 	border-radius: 15px 15px 15px 15px;
-	box-shadow: 0 0 15px red;
+	box-shadow: 0 0 15px #F2F2F2;
 }
 #port img, #fort img, #iles img, #calanques img, #garde img, #longchamp img
 {
@@ -424,7 +419,7 @@ li:nth-child(2) a
 {
 	position: absolute;
 	bottom: 0;
-	background-color: yellow;
+	background-color: white;
 	width: 100%;
 	line-height: 40px;
 	font-family: ralewaybold;
