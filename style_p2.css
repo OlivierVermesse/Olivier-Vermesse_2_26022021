@@ -393,7 +393,7 @@ li:nth-child(2) a
 #port, #calanques
 {
 	position: relative;
-	width: 23%;
+	width: 24%;
 	height: 500px;
 	border-radius: 15px 15px 15px 15px;
 	box-shadow: 0 0 15px #F2F2F2;
@@ -401,7 +401,7 @@ li:nth-child(2) a
 #fort, #iles, #garde, #longchamp
 {
 	position: relative;
-	width: 23%;
+	width: 24%;
 	height: 230px;
 	border-radius: 15px 15px 15px 15px;
 	box-shadow: 0 0 15px #F2F2F2;
@@ -445,7 +445,6 @@ p a
 
 
 /*----------------------------MEDIA QUERIES--------------------------------*/
-
 @media all and (max-width:767px) /*Mobile*/
 {
 #bloc_page
@@ -557,39 +556,7 @@ nav li:hover
 	height: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*section ACTIVITES*/
-
 #activity
 {
 	flex-wrap: nowrap;
@@ -604,12 +571,100 @@ nav li:hover
 #global_footer
 {
 	flex-direction: column;
+	padding-right: 0;
+}
+
+
+
+}
+
+
+@media all and (min-width:768px) and (max-width:991px) /*Tablette*/
+{
+#bloc_page
+{
 	width: auto;
 }
 
-
+/*section RECHERCHE*/
+.boutonrechercher_web
+{
+	display: none;
+}
+.boutonrechercher_mobile
+{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: #0065FC;
+	color: white;
+	border: none;
+	border-radius: 15px 15px 15px 15px;
 }
 
+/*section HEBERGEMENTS*/
+#section1
+{
+	flex-direction: column;
+}
+#bloc_hebergements
+{
+	order:1;
+	margin-top: 15px;
+	margin-right: 0;
+}
+#bloc_titre_hebergements h2
+{
+	margin-left: 0;
+}
 
+#hotels_hebergements
+{
+	justify-content: space-between;
+}
+#hotels_pop
+{
+	height: 250px;
+}
+#htlm_matin, #htlm_eau, #htlm_bleublanc
+{
+	flex-direction: column;
+	width: 30%;
+}
+.bloc_htl_info_pop
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 10px 10px 10px 10px;
+}
+.htl_photo_pop
+{
+	display: flex;
+	width: auto;
+	height: 150px;
+	border-radius: 15px 15px 15px 15px;
+}
+.htl_photo_pop img
+{
+	border-radius: 15px 15px 15px 15px;
+}
 
+/*section ACTIVITES*/
+#activity
+{
+    height: 800px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+#port, #calanques, #fort, #iles, #garde, #longchamp
+{
+	width: 45%;
+	height: 250px;
+}
 
+#global_footer
+{
+	padding-right: 10px;
+}
+}
