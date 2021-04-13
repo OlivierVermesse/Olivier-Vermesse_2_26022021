@@ -435,7 +435,7 @@ li:nth-child(2) a
 	display: flex;
 	justify-content: space-between;
 	background-color: #F2F2F2;
-	padding-right: 300px;
+	padding-right: 10px;
 	padding-left: 10px;
 }
 p a
