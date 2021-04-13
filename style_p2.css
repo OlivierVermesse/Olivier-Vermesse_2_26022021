@@ -42,6 +42,9 @@
 body
 {
 	font-family: ralewayregular, Arial, sans-serif;
+}
+#bloc_page
+{
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -433,7 +436,7 @@ li:nth-child(2) a
 #global_footer
 {
 	display: flex;
-	justify-content: space-between;
+	/*justify-content: flex-start;*/
 	background-color: #F2F2F2;
 	padding-right: 10px;
 	padding-left: 10px;
@@ -441,6 +444,10 @@ li:nth-child(2) a
 p a
 {	color: black;
 	font-size: 0.8em;
+}
+#noshebergements, #assistance
+{
+	margin-left: 20rem;
 }
 
 
