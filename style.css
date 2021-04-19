@@ -39,14 +39,10 @@
     font-style: normal;
 }
 
+
 body
 {
 	font-family: ralewayregular, Arial, sans-serif;
-}
-#bloc_page
-{
-	padding-left: 20px;
-	padding-right: 20px;
 }
 a
 {
@@ -62,6 +58,11 @@ h1,h2,h3
 	display: flex;
 	width: auto;
 }
+.logo
+{
+margin-top: 30px;
+margin-left: 20px;
+}
 
 #btn
 {
@@ -73,17 +74,24 @@ h1,h2,h3
 {
 	display: flex;
 	font-weight: bold;
+	padding-top: 38px;
+	padding-right: 20px;
 }
 nav ul
 {
 	display: flex;
 	list-style-type: none;
-	margin-top: 0;
+	margin-top: 40px;
 	justify-content: flex-start;
 }
 nav li
 {
 	padding-right: 50px;
+}
+li:nth-child(1) a
+{
+	border-top: 2px solid #0065FC;
+	padding-top: 40px;
 }
 li:nth-child(2) a
 {
@@ -92,10 +100,18 @@ li:nth-child(2) a
 
 
 /*section RECHERCHE*/
+
+#bloc_search
+{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 #rechercher
 {
 	display: flex;
 	height: 40px;
+	padding-left: 10px;
 	justify-content: flex-start;
 	flex-wrap: nowrap;
 }
@@ -113,11 +129,16 @@ li:nth-child(2) a
 	height: 40px;
 	width: 100%;
 	display: flex;
-	font-weight: bold;
-	font-size: 1.2em;
+	font-size: 1em;
 	font-family: ralewayblack;
 	border:none;
+	padding-left: 10px;
 }
+input::placeholder {
+      color: black;
+      }
+
+
 .boutonrechercher_web
 {
 	height: 100%;
@@ -219,8 +240,8 @@ li:nth-child(2) a
 
 #bloc_hebergements
 {
-	flex:3.5;
-	margin-right: 30px;
+	flex:2;
+	margin-right: 20px;
 	display: flex;
 	height: 550px;
 	flex-direction: column;
@@ -252,7 +273,7 @@ li:nth-child(2) a
 {
 	display: flex;
 	flex-direction: column;
-	width: 25%;
+	width: 28%;
 	height: 180px;
 	border-radius: 15px 15px 15px 15px;
 	background-color: white;
@@ -293,7 +314,7 @@ li:nth-child(2) a
 
 #bloc_populaires
 {
-	flex:1.5;
+	flex:1;
 	height: 550px;
 	display: flex;
 	flex-direction: column;
@@ -330,17 +351,17 @@ li:nth-child(2) a
 .bloc_htl_info_pop
 {
 	display: flex;
-	flex:2;
 	flex-direction: column;
 	justify-content: space-between;
-	margin: 10px 10px 10px 30px;
+	margin: 10px 10px 10px 10px;
+	flex:2;
 }
 .htl_photo_pop
 {
 	display: flex;
-	width: 100px;
+	width: 200px;
 	height: auto;
-	flex:1;
+	flex:2;
 	border-radius: 15px 15px 15px 15px;
 }
 .htl_photo_pop img
@@ -367,7 +388,7 @@ li:nth-child(2) a
 }
 .fromprice
 {
-	font-size: 0.8em;
+	font-size: 0.9em;
 }
 .fromprice span
 {
@@ -399,15 +420,15 @@ li:nth-child(2) a
 	width: 24%;
 	height: 500px;
 	border-radius: 15px 15px 15px 15px;
-	box-shadow: 0 0 15px #F2F2F2;
+	box-shadow: 0 0 10px #F2F2F2;
 }
 #fort, #iles, #garde, #longchamp
 {
 	position: relative;
-	width: 24%;
+	width: 22%;
 	height: 230px;
 	border-radius: 15px 15px 15px 15px;
-	box-shadow: 0 0 15px #F2F2F2;
+	box-shadow: 0 0 10px #F2F2F2;
 }
 #port img, #fort img, #iles img, #calanques img, #garde img, #longchamp img
 {
@@ -436,42 +457,49 @@ li:nth-child(2) a
 #global_footer
 {
 	display: flex;
-	/*justify-content: flex-start;*/
 	background-color: #F2F2F2;
 	padding-right: 10px;
 	padding-left: 10px;
+	margin-top: 30px;
 }
 p a
 {	color: black;
 	font-size: 0.8em;
 }
-#noshebergements, #assistance
+#apropos,#noshebergements, #assistance
 {
-	margin-left: 20rem;
+	width: 100%;
 }
 
 
 /*----------------------------MEDIA QUERIES--------------------------------*/
 @media all and (max-width:767px) /*Mobile*/
 {
-#bloc_page
-{
-	width: auto;
-}
+
+
 #bloc_header
 {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
+.logo
+{
+margin-top: 0;
+}
 #btn
 {
 	width: 100%;
 	order: 1;
 }
+#btnInscrire
+{
+	padding-top: 0;
+}
 nav
 {
 	width: 100%;
+	padding-top: 20px;
 }
 nav ul
 {
@@ -486,11 +514,19 @@ nav li
 {
 	border-bottom: 2px solid #F2F2F2;
 	flex-basis: 50%;
+	padding-right: 0;
 }
-nav li:hover
+nav li:nth-child(1)
 {
 	border-bottom: 2px solid #0065FC;
 }
+
+li:nth-child(1) a
+{
+	border-top: none;
+	padding-top: 0;
+}
+
 
 /*section RECHERCHE*/
 .boutonrechercher_web
@@ -515,7 +551,6 @@ nav li:hover
 }
 #eco, #famille, #romantique, #animaux
 {
-	margin-right: 30px;
 	margin-top: 15px;
 }
 
@@ -528,6 +563,7 @@ nav li:hover
 {
 	order:1;
 	margin-top: 15px;
+	margin-right: 0;
 	width: 100%;
 	height: 3500px;
 	background-color: white;
@@ -535,29 +571,35 @@ nav li:hover
 #hotels_hebergements
 {
 	flex-direction: column;
-	flex-wrap: nowrap;
-	height: 2000px;
-	justify-content: space-around;
+	height: auto;
 }
 #htlm_cannebiere, #htlm_port, #htlm_mouettes, #htlm_mer, #htlm_panier,#htlm_amina
 {
-	width: 100%;
-	height: 300px;
-	box-shadow: 0 0 15px #F2F2F2;
+	width: auto;
+	margin-top: 15px;
+}
+.htl_photo
+{
+	height: 150px;
+}
+.htl_photo img
+{
+	height: 80%;
+	border-radius: 15px 15px 0px 0px;
 }
 #bloc_populaires
 {
-	height: 1000px;
+	height: auto;
+	background-color: transparent;
 }
 #hotels_pop
 {
 	align-content: space-around;
 }
-.htl_photo
+#htlm_matin, #htlm_eau, #htlm_bleublanc
 {
-	height: 80%;
+	box-shadow: 0 0 10px #F2F2F2;
 }
-
 .bloc_htl_info
 {
 	height: auto;
@@ -567,31 +609,79 @@ nav li:hover
 #activity
 {
 	flex-wrap: nowrap;
-	height: 1600px;
+	height: auto;
 }
 #port, #fort, #iles, #calanques, #garde, #longchamp
 {
 	width: auto;
-	height: 240px;
+	height: 150px;
+	margin-top: 15px;
 }
-
+#port img, #fort img, #iles img, #calanques img, #garde img, #longchamp img
+{
+	height: 70%;
+	border-radius: 15px 15px 0px 0px;
+}
 #global_footer
 {
 	flex-direction: column;
 	padding-right: 0;
+	background-color: transparent;
+}
 }
 
-
-
-}
-
-
-@media all and (min-width:768px) and (max-width:991px) /*Tablette*/
+@media all and (min-width:768px) and (max-width:1023px) /*Tablette*/
 {
-#bloc_page
+#bloc_header
 {
-	width: auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
+.logo
+{
+margin-top: 0;
+}
+#btn
+{
+	width: 100%;
+	order: 1;
+}
+#btnInscrire
+{
+	padding-top: 0;
+}
+nav
+{
+	width: 100%;
+	padding-top: 20px;
+}
+nav ul
+{
+	display: flex;
+	list-style-type: none;
+	margin-top: 0;
+	justify-content: flex-start;
+	padding-left: 0;
+	text-align: center;
+}
+nav li
+{
+	border-bottom: 2px solid #F2F2F2;
+	flex-basis: 50%;
+	padding-right: 0;
+}
+nav li:nth-child(1)
+{
+	border-bottom: 2px solid #0065FC;
+}
+
+li:nth-child(1) a
+{
+	border-top: none;
+	padding-top: 0;
+}
+
 
 /*section RECHERCHE*/
 .boutonrechercher_web
@@ -608,6 +698,16 @@ nav li:hover
 	border: none;
 	border-radius: 15px 15px 15px 15px;
 }
+#filtres
+{
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: space-between;	
+}
+#eco, #famille, #romantique, #animaux
+{
+	margin-top: 15px;
+}
 
 /*section HEBERGEMENTS*/
 #section1
@@ -617,52 +717,77 @@ nav li:hover
 #bloc_hebergements
 {
 	order:1;
-	margin-top: 15px;
+	height: 3000px;
 	margin-right: 0;
+	background-color: transparent;
 }
-#bloc_titre_hebergements h2
+#bloc_titre_hebergements
 {
-	margin-left: 0;
+	padding-left: 30px;
 }
-
 #hotels_hebergements
 {
-	justify-content: space-between;
+	flex-direction: column;
+	align-content: space-around;
+	justify-content: space-around;
+	height: 1100px;
+}
+#htlm_cannebiere, #htlm_port, #htlm_mouettes, #htlm_mer, #htlm_panier,#htlm_amina
+{
+	width: 90%;
+	flex-direction: row;
+	height: 150px;
+	box-shadow: 0 0 10px #F2F2F2;
+}
+.bloc_htl_info
+{
+	margin: 20px 20px 20px 30px;
+	height: auto; 
+	flex:2;
+}
+.htl_photo
+{
+	width: 150px;
+	height: 150px;
+	flex:2;
+}
+
+#bloc_populaires
+{
+	height: 1000px;
 }
 #hotels_pop
 {
-	height: 250px;
+	align-content: space-around;
+	height: 600px;
+	padding-bottom: 10px;
 }
 #htlm_matin, #htlm_eau, #htlm_bleublanc
 {
-	flex-direction: column;
-	width: 30%;
+	height: 150px;
+	box-shadow: 0 0 10px #F2F2F2;
 }
+
 .bloc_htl_info_pop
 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	margin: 10px 10px 10px 10px;
+	margin: 20px 20px 20px 30px;
+	height: auto; 
 }
 .htl_photo_pop
 {
-	display: flex;
 	width: auto;
 	height: 150px;
-	border-radius: 15px 15px 15px 15px;
-}
-.htl_photo_pop img
-{
-	border-radius: 15px 15px 15px 15px;
 }
 
 /*section ACTIVITES*/
+#bloc_activity h3
+{
+	padding-left: 30px;
+}
 #activity
 {
     height: 800px;
-    justify-content: space-between;
-    align-content: space-between;
+    align-content: space-around;
 }
 #port, #calanques, #fort, #iles, #garde, #longchamp
 {
@@ -672,6 +797,9 @@ nav li:hover
 
 #global_footer
 {
-	padding-right: 10px;
+	flex-direction: column;
+	padding-right: 0;
+	padding-left: 30px;
+	background-color: transparent;
 }
 }
