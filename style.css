@@ -336,7 +336,7 @@ input::placeholder {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-content: space-between;
+	align-content: space-around;
 	height: 460px;
 }
 #htlm_matin, #htlm_eau, #htlm_bleublanc
@@ -473,10 +473,8 @@ p a
 
 
 /*----------------------------MEDIA QUERIES--------------------------------*/
-@media all and (max-width:767px) /*Mobile*/
+@media all and (max-width:767px) and (orientation:portrait) /*Mobile*/
 {
-
-
 #bloc_header
 {
 	flex-wrap: wrap;
@@ -628,6 +626,83 @@ li:nth-child(1) a
 	background-color: transparent;
 }
 }
+
+@media all and (max-width:767px) and (orientation:landscape) /*Mobile paysage*/
+{
+
+/*section HEBERGEMENTS*/
+#section1
+{
+	flex-direction: column;
+}
+#bloc_hebergements
+{
+	order:1;
+	height: 3000px;
+	margin-right: 0;
+	background-color: transparent;
+}
+#bloc_titre_hebergements
+{
+	padding-left: 30px;
+}
+#hotels_hebergements
+{
+	flex-direction: column;
+	align-content: space-around;
+	justify-content: space-around;
+	height: 1100px;
+}
+#htlm_cannebiere, #htlm_port, #htlm_mouettes, #htlm_mer, #htlm_panier,#htlm_amina
+{
+	width: 90%;
+	flex-direction: row;
+	height: 150px;
+	box-shadow: 0 0 10px #F2F2F2;
+}
+.bloc_htl_info
+{
+	margin: 20px 20px 20px 30px;
+	height: auto; 
+	flex:2;
+}
+.htl_photo
+{
+	width: 150px;
+	height: 150px;
+	flex:2;
+}
+
+
+/*section ACTIVITES*/
+#activity
+{
+	flex-wrap: nowrap;
+	height: auto;
+}
+#port, #fort, #iles, #calanques, #garde, #longchamp
+{
+	width: auto;
+	height: 180px;
+	margin-bottom: 15px;
+}
+#global_footer
+{
+	flex-direction: column;
+	padding-right: 0;
+	padding-left: 30px;
+	background-color: transparent;
+}
+}
+
+
+
+
+
+
+
+
+
 
 @media all and (min-width:768px) and (max-width:1023px) /*Tablette*/
 {
