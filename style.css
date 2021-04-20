@@ -515,6 +515,7 @@ nav li
 	border-bottom: 2px solid #F2F2F2;
 	flex-basis: 50%;
 	padding-right: 0;
+	padding-bottom: 15px;
 }
 nav li:nth-child(1)
 {
@@ -576,7 +577,7 @@ li:nth-child(1) a
 #htlm_cannebiere, #htlm_port, #htlm_mouettes, #htlm_mer, #htlm_panier,#htlm_amina
 {
 	width: auto;
-	margin-top: 15px;
+	height: auto;
 }
 .htl_photo
 {
@@ -584,7 +585,6 @@ li:nth-child(1) a
 }
 .htl_photo img
 {
-	height: 80%;
 	border-radius: 15px 15px 0px 0px;
 }
 #bloc_populaires
@@ -615,7 +615,6 @@ li:nth-child(1) a
 {
 	width: auto;
 	height: 150px;
-	margin-top: 15px;
 }
 #port img, #fort img, #iles img, #calanques img, #garde img, #longchamp img
 {
@@ -670,6 +669,7 @@ nav li
 	border-bottom: 2px solid #F2F2F2;
 	flex-basis: 50%;
 	padding-right: 0;
+	padding-bottom: 15px;
 }
 nav li:nth-child(1)
 {
