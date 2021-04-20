@@ -629,7 +629,56 @@ li:nth-child(1) a
 
 @media all and (max-width:767px) and (orientation:landscape) /*Mobile paysage*/
 {
+#bloc_header
+{
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo
+{
+margin-top: 0;
+}
+#btn
+{
+	width: 100%;
+	order: 1;
+}
+#btnInscrire
+{
+	padding-top: 0;
+}
+nav
+{
+	width: 100%;
+	padding-top: 20px;
+}
+nav ul
+{
+	display: flex;
+	list-style-type: none;
+	margin-top: 0;
+	justify-content: flex-start;
+	padding-left: 0;
+	text-align: center;
+}
+nav li
+{
+	border-bottom: 2px solid #F2F2F2;
+	flex-basis: 50%;
+	padding-right: 0;
+	padding-bottom: 15px;
+}
+nav li:nth-child(1)
+{
+	border-bottom: 2px solid #0065FC;
+}
 
+li:nth-child(1) a
+{
+	border-top: none;
+	padding-top: 0;
+}
 /*section HEBERGEMENTS*/
 #section1
 {
@@ -679,6 +728,11 @@ li:nth-child(1) a
 {
 	flex-wrap: nowrap;
 	height: auto;
+	padding-left: 30px;
+}
+#bloc_activity h3
+{
+	padding-left: 30px;
 }
 #port, #fort, #iles, #calanques, #garde, #longchamp
 {
@@ -686,6 +740,7 @@ li:nth-child(1) a
 	height: 180px;
 	margin-bottom: 15px;
 }
+
 #global_footer
 {
 	flex-direction: column;
