@@ -721,6 +721,10 @@ li:nth-child(1) a
 	height: 150px;
 	flex:2;
 }
+#bloc_populaires
+{
+	margin-left:30px;
+}
 
 
 /*section ACTIVITES*/
